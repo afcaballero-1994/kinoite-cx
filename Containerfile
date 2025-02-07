@@ -1,9 +1,10 @@
-FROM quay.io/almalinuxorg/almalinux-bootc:latest
+FROM ghcr.io/ublue-os/kinoite-nvidia:latest
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
 # FROM ghcr.io/ublue-os/bluefin-nvidia:stable
-# 
+# quay.io/almalinuxorg/almalinux-bootc:latest
+
 # ... and so on, here are more base images
 # Universal Blue Images: https://github.com/orgs/ublue-os/packages
 # Fedora base image: quay.io/fedora/fedora-bootc:41
