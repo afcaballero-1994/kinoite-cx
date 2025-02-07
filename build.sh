@@ -9,6 +9,12 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+rpm-ostree override remove libavcodec-free libavfilter-free libavformat-free libavutil-free libpostproc-free libswresample-free libswscale-free --install ffmpeg
+
+rpm-ostree install distrobox docker emacs ffmpeg fish gstreamer1-plugin-openh264 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-ugly kitty libavcodec-freeworld \
+                          libva-nvidia-driver mesa-libGL-devel neovim rpmfusion-free-release rpmfusion-nonfree-release smplayer x265 \
+                           xorg-x11-drv-nvidia zsh
+
 # this installs a package from fedora repos
 dnf install -y tmux 
 
