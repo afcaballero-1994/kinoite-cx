@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/kinoite-nvidia:latest
+FROM quay.io/centos-bootc/centos-bootc:stream9
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
