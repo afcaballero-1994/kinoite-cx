@@ -17,7 +17,7 @@ dnf install -y distrobox docker emacs fish \
                           libva-nvidia-driver mesa-libGL-devel neovim smplayer x265 \
                           zsh neovim
 
-dnf update -y @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+dnf group update -y multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 
 # this installs a package from fedora repos
 dnf install -y tmux 
