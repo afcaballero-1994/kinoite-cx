@@ -1,4 +1,4 @@
-FROM quay.io/centos-bootc/centos-bootc:stream9
+FROM quay.io/almalinuxorg/almalinux-bootc:latest
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
