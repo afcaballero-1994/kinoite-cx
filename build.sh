@@ -13,7 +13,7 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 
 
 dnf install -y ffmpeg
-dnf install -y distrobox docker emacs ffmpeg fish gstreamer1-plugin-openh264 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-ugly \
+dnf install -y distrobox docker emacs fish gstreamer1-plugin-openh264 gstreamer1-plugins-bad gstreamer1-plugins-ugly \
                           libva-nvidia-driver mesa-libGL-devel neovim rpmfusion-free-release rpmfusion-nonfree-release smplayer x265 \
                           zsh neovim
 
