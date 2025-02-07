@@ -15,7 +15,7 @@ dnf install -y --nogpgcheck https://mirrors.rpmfusion.org/free/el/rpmfusion-free
 dnf install epel-release dnf-utils -y
 
 dnf install -y distrobox docker emacs fish kitty \
-                          libva-nvidia-driver mesa-libGL-devel neovim smplayer x265 \
+                          mesa-libGL-devel neovim  x265 \
                           zsh neovim firefox
 
 # this installs a package from fedora repos
