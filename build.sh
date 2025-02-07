@@ -11,10 +11,6 @@ set -ouex pipefail
 
 rpm-ostree install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-rpm-ostree override replace \
-  --experimental \
-  --from repo='fedora-multimedia'
-
 rpm-ostree install -y gstreamer1-plugins-bad-free-extras gstreamer1-plugins-bad-freeworld gstreamer1-plugins-ugly gstreamer1-vaapi x264 x265 
 
 rpm-ostree install -y kitty tmux distrobox podman docker emacs ffmpeg fish gstreamer1-plugin-openh264 gstreamer1-plugins-ugly kitty \
