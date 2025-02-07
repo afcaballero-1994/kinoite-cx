@@ -13,9 +13,7 @@ dnf install -y --nogpgcheck https://dl.fedoraproject.org/pub/epel/epel-release-l
 dnf install -y --nogpgcheck https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
 
 
-dnf swap ffmpeg-free ffmpeg --allowerasing
-
-#dnf install -y ffmpeg
+dnf install -y ffmpeg --allowerasing
 dnf install -y distrobox docker emacs fish kitty \
                           libva-nvidia-driver mesa-libGL-devel neovim smplayer x265 \
                           zsh neovim
