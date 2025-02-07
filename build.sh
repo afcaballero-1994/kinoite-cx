@@ -9,15 +9,14 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
+dnf install gstreamer1-plugins-bad-freeworld --allowerasing --best
 
 dnf install -y ffmpeg
-dnf install -y distrobox docker emacs fish \
+dnf install -y distrobox docker emacs fish kitty \
                           libva-nvidia-driver mesa-libGL-devel neovim smplayer x265 \
                           zsh neovim
-
-dnf group update -y multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 
 # this installs a package from fedora repos
 dnf install -y tmux 
