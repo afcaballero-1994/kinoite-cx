@@ -17,7 +17,7 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 dnf install -y ffmpeg
 dnf install -y distrobox docker emacs ffmpeg fish gstreamer1-plugin-openh264 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-ugly \
                           libva-nvidia-driver mesa-libGL-devel neovim rpmfusion-free-release rpmfusion-nonfree-release smplayer x265 \
-                           xorg-x11-drv-nvidia zsh neovim
+                          zsh neovim
 
 
 # this installs a package from fedora repos
