@@ -13,7 +13,7 @@ rpm-ostree install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-r
 
 rpm-ostree install -y kitty tmux distrobox podman docker emacs ffmpeg fish gstreamer1-plugin-openh264 gstreamer1-plugins-ugly kitty \
                            libva-nvidia-driver neovim smplayer x265 ffmpeg-libs gstreamer1-vaapi x264\
-                           zsh gstreamer1-plugins-bad-free-extras
+                           zsh gstreamer1-plugins-bad-free-extras qemu virt-manager
 
 # Use a COPR Example:
 #
